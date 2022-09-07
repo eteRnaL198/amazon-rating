@@ -27,12 +27,12 @@ with open('./Magazine_Subscriptions.csv') as f: # もう一回読み込む
   # 辞書→リストに変換
   i = 0
   for user in dictionaries:
-      rating = [i]
+      rating = [i] # ユーザーの番号を代入しておく [[0], [1], [2], ...]
       for item in dictionaries[user].values():
         rating.append(float(item))
       ratings.append(rating)
       i += 1
     # ratings = [[0, 5, 4], [1, 0, 5]]
 
-for rating in ratings:
-  print(rating)
+# for rating in ratings:
+#   print(rating)
