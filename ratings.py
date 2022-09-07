@@ -13,15 +13,13 @@ with open('./Magazine_Subscriptions.csv') as f:
 
   for user in dictionaries:
       for item in items:
-          dictionaries[user][item] = 0
-          # すべてのitemのレビューを0に初期化
+          dictionaries[user][item] = 0 # すべてのitemのレビューを0に初期化
           # dictionaries = {'user1': {'a': 0, 'b': 0}, 'user2': {'a': 0, 'b': 0}}
 
 with open('./Magazine_Subscriptions.csv') as f: # もう一回読み込む
   reader = csv.reader(f)
   for row in reader:
-    dictionaries[row[1]][row[0]] = row[2]
-    # レビューの値を代入
+    dictionaries[row[1]][row[0]] = row[2] # レビューの値を代入
     # dictionaries = {'user1': {'a': 5, 'b': 4}, 'user2': {'a': 0, 'b': 5}}
 
   # 辞書→リストに変換
