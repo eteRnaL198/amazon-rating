@@ -34,4 +34,5 @@ with open('./Magazine_Subscriptions.csv') as f: # もう一回読み込む
       i += 1
     # ratings = [[0, 5, 4], [1, 0, 5]]
 
-print(ratings)
+for rating in ratings:
+  print(rating)
